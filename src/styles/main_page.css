@@ -97,6 +97,9 @@ select {
   list-style: none;
   display: flex;
 }
+.register{
+    padding-right: 2rem;
+}
  
 .box{
     gap:2rem;
@@ -115,23 +118,27 @@ a {
 }
 
 .login {
-  background-color: var(--box-color);
+  /* background-color: var(--box-color); */
+    background-image: radial-gradient(circle, #008969, #018161, #01795a, #007152, #00694b);
   border: none;
-  padding: 0.5rem 1.3rem;
+  padding: 0.5rem 1.2rem;
   border-radius: 2rem;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   cursor: pointer;
-  color: whitesmoke;
+  color: #EEF2E6;
   transition: all 0.2s ease-in-out;
 }
 
 .signup {
-    background-color: var(--box-color);
-    color: whitesmoke;
+    /* background-color: var(--box-color); */
+     /* background-image: linear-gradient(to right top, #1fab89, #19a281, #129a79, #099171, #008969); */
+     background-image: radial-gradient(circle, #008969, #018161, #01795a, #007152, #00694b);
+     /* background-image: linear-gradient(to bottom, #1fab89, #1aa483, #159e7d, #109777, #099171, #068c6c, #038666, #018161, #017b5b, #017556, #006f50, #00694b); */
+    color: #EEF2E6;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.2rem;
     border-radius: 2rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
@@ -188,7 +195,39 @@ a {
     border: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
-    color: #D6CDA4;
+    color: #EEF2E6;
     margin :1.6rem 0;
-    background-color: #3D8361;
+    /* background-color: #285d2a; */
+     background-image: linear-gradient(to right, #1fab89, #1aa483, #159e7d, #109777, #099171, #05916f, #02916c, #00916a, #00976a, #009c6a, #00a269, #00a768);
+     /* background-image: linear-gradient(to right, #3d8361, #418864, #458d66, #499269, #4d976b, #4b9a6b, #4a9d6c, #48a06c, #3ea26b, #33a46a, #23a569, #00a768); */
+}
+
+.btn:hover{
+    transform: scalex(1.06) scaley(1.01);
+    /* background-color: #243D25; */
+
+}
+
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid ; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #D7FBE8; }
 }
